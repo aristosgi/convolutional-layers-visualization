@@ -11,6 +11,9 @@ This repository explores the application of convolutional filters and pooling op
 - **Convolutional Filters**: It defines and applies two essential convolutional filters: vertical and horizontal. These filters highlight vertical and horizontal edges respectively, crucial for image feature extraction.
   
 - **Max Pooling**: After convolution, max pooling is applied to downsample feature maps. This step retains the most significant features while reducing computational load and enhancing computational efficiency.
+
+**Average Pooling**: After convolution, average pooling is applied to downsample feature maps. This process computes the average value of each non-overlapping 2x2 patch of the feature map. Unlike max pooling, which retains the maximum activation, average pooling retains the average activation across the patch. This technique helps to reduce the spatial dimensions of the feature map, capturing the general presence of features rather than their precise locations. Average pooling can be beneficial in scenarios where preserving more spatial information or smoothing out noise in the feature maps is desirable.
+
   
 - **Visualization**: The results of each step (original image, convolved images, and pooled images) are visualized using Matplotlib. This visualization aids in understanding how convolution and pooling alter the image representations.
 
